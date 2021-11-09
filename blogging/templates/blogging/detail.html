@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{# polling/templates/polling/detail.html #}
+{% extends "base.html" %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail</title>
+</head>
+<body>
+
+
+{% block content %}
+<a href="/">Home</a>
+<h1>{{ post.title }}</h1>
+<div class="post-body">
+
+        <h5>Posted by {{ post.author }} - {{post.created_date}}</h5>
+        <h5>{{ post.text }}</h5>
+
+</div>
+
+{% endblock %}
+
+
+</body>
+</html>
+
