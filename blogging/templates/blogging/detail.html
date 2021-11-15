@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{# polling/templates/polling/detail.html #}
+{# blogging/templates/blogging/detail.html #}
 {% extends "base.html" %}
 <html lang="en">
 <head>
@@ -18,6 +18,14 @@
         <h5>{{ post.text }}</h5>
 
 </div>
+
+<ul class="categories">
+    {% for category in post.categories.all %}
+    <li>{{ category }}</li>
+    {% endfor %}
+
+</ul>
+
 
 {% endblock %}
 
