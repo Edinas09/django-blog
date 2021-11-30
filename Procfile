@@ -1,1 +1,1 @@
-web: gunicorn djangoenv/mysite/mysite.wsgigit
+web: gunimysite/mysite/wsgi
